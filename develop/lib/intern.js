@@ -1,3 +1,4 @@
+//intern class constuctor 
 const employee = require("./employee");
 
 class intern extends employee {
