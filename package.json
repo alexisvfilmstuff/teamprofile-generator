@@ -1,6 +1,24 @@
 {
+  "name": "teamprofile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexisvfilmstuff/teamprofile-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexisvfilmstuff/teamprofile-generator/issues"
+  },
+  "homepage": "https://github.com/remireems/EmployeeSummaryInfo#readme",
   "dependencies": {
-    "fs-js": "^1.0.6",
-    "inquirer": "^8.1.2"
+    "inquirer": "^8.1.2",
+    "jest": "^27.1.0"
   }
 }

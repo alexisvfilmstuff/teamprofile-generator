@@ -1,82 +1,32 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Team Aggregator</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
-  <script src="https://kit.fontawesome.com/5f4b0fb1a5.js" crossorigin="anonymous" defer></script>
-
-  <script src="../index.js" crossorigin="anonymous" defer></script>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Team</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
 
 <body>
-  <style>
-    .nav {
-      height: 200px;
-      background-color: rgba(255, 84, 84, 0.591);
-      color: black;
-      display: flex;
-      align-items: center;
-      border-radius: 0 0 10px 10px;
-      margin-bottom: 50px;
-    }
-
-    .row {
-      display: flex;
-      justify-content: space-around;
-
-    }
-
-    .card {
-      width: 18rem;
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 60px;
-      background-color: rgb(161, 206, 255);
-      box-shadow: 2.5px 4px rgb(138, 137, 137);
-    }
-
-    .list-group-item {
-      background-color: rgba(240, 240, 240, 0.913);
-    }
-
-    .card-header {
-      text-align: center;
-    }
-
-    .card-subtitle {
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    footer {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      text-align: center;
-    }
-  </style>
-
-  <div class="container">
-    <header>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <h1>My Team</h1>
-        </li>
-      </ul>
-    </header>
-    <div class="row">
-      {{html}}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 jumbotron mb-3 team-heading">
+                <h1 class="text-center">My Team</h1>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="team-area col-12 d-flex justify-content-center">
+                {{ team }}
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

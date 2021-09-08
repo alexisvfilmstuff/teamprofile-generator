@@ -1,17 +1,19 @@
-//intern class constuctor 
-const Employee = require("./Employee");
+// Intern class constructor and inherits from Employee class
+const Employee = require('./Employee')
 
 class Intern extends Employee {
-  constructor(name, id, email, school) {
-    super(name, id, email);
-    this.school = school;
+  constructor (name, id, email, school) {
+    super (name, id, email)
+    this.school = school 
   }
-  getRole() {
-    return "Intern";
-  }
+
   getSchool() {
-    return this.school;
+    return this.school
+  }
+
+  getRole() {
+    return 'Intern'
   }
 }
 
-module.exports = Intern;
+module.exports = Intern

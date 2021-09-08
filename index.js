@@ -3,7 +3,7 @@ const fs = require("fs");
 // inquirer to prompt the user for team members and position;
 const inquirer = require("inquirer");
 // questions for the inquirer
-const questions = require("./develop/lib/questions");
+const questions = require("./develop/lib/Questions");
 // empty string for the generated card data to be loaded to the html;
 let html = "";
 // require classes;
@@ -12,7 +12,7 @@ const Engineer = require("./develop/lib/Engineer");
 const Intern = require("./develop/lib/Intern");
 const path = require("path");
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
+const OUTPUT_DIR = path.resolve(__dirname, "./develop/output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 // const render = require("./lib/htmlRenderer");
@@ -93,7 +93,7 @@ function readEngFile(engineerData) {
   // console.log(engineerData);
   // data is my html string,
   const icon = `<i class="fas fa-glasses fa-2x"></i>`;
-  fs.readFile("./develop/templates/engineer.html", "utf8", function (error, data) {
+  fs.readFile("./develop/html/engineer.html", "utf8", function (error, data) {
     // console.log(engineerData.name);
     const newData = data
       .replace("Ename:", engineerData.name)
@@ -111,7 +111,7 @@ function readEngFile(engineerData) {
 function readMgnFile(managerData) {
   // data is my html string,
   const icon = `<i class="far fa-chart-bar fa-2x"></i>`;
-  fs.readFile("./develop/templates/manager.html", "utf8", function (error, data) {
+  fs.readFile("./develop/html/manager.html", "utf8", function (error, data) {
     const newData = data
       .replace("Mname:", managerData.name)
       .replace("Micon:", icon)
@@ -129,7 +129,7 @@ function readInternFile(internData) {
   console.log(internData);
   // data is my html string,
   const icon = `<i class="fas fa-eye fa-2x"></i>`;
-  fs.readFile("./develop/templates/intern.html", "utf8", function (error, data) {
+  fs.readFile("./develop/html/intern.html", "utf8", function (error, data) {
     const newData = data
       .replace("Iname:", internData.name)
       .replace("Iicon:", icon)
@@ -157,3 +157,5 @@ function createHTML() {
 module.exports = {};
 
 createEmployee();
+
+

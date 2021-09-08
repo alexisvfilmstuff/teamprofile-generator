@@ -1,18 +1,19 @@
-//manager class constructor
-const Employee = require("./Employee");
+// Manager class constructor and inherits from Employee class
+const Employee = require('./Employee')
 
 class Manager extends Employee {
-  constructor(name, id, email, officeNumber) {
-    super(name, id, email);
-    this.officeNumber = officeNumber;
-    this.role = "Manager";
+  constructor (name, id, email, officeNumber) {
+    super (name, id, email)
+    this.officeNumber = officeNumber
   }
-  getRole() {
-    return this.role;
-  }
+
   getOfficeNumber() {
-    return this.officeNumber;
+    return this.officeNumber
+  }
+
+  getRole() {
+    return 'Manager'
   }
 }
 
-module.exports = Manager;
+module.exports = Manager

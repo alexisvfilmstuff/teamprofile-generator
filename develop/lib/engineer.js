@@ -1,18 +1,19 @@
-//engineer class constructor
-const Employee = require("./Employee");
+//Engineer class constructor and inherits from Employee class
+const Employee = require('./Employee')
 
 class Engineer extends Employee {
-  constructor(name, id, email, github) {
-    super(name, id, email);
-    this.github = github;
-    this.role = "Engineer";
+  constructor (name, id, email, github) {
+    super (name, id, email)
+    this.github = github
   }
-  getRole() {
-    return this.role;
-  }
+
   getGithub() {
-    return this.github;
+    return this.github
+  }
+
+  getRole() {
+    return 'Engineer'
   }
 }
 
-module.exports = Engineer;
+module.exports = Engineer
