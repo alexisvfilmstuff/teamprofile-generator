@@ -1,10 +1,10 @@
 //employee class constructor
-class employee {
+class Employee {
   constructor(name, id, email) {
     this.name = name;
-    this.id = id; 
+    this.id = id;
     this.email = email;
-    this.role = "employee";
+    this.role = "Employee";
   }
   getName() {
     return this.name;
@@ -20,4 +20,4 @@ class employee {
   }
 }
 
-module.exports = employee;
+module.exports = Employee;
