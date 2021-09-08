@@ -1,6 +1,7 @@
+
+
         .nav {
           height: 200px;
-          background-color: rgba(255, 84, 84, 0.591);
           color: black;
           display: flex;
           align-items: center;
@@ -18,12 +19,12 @@
           display: flex;
           justify-content: space-around;
           margin-bottom: 60px;
-          background-color: rgb(161, 206, 255);
-          box-shadow: 2.5px 4px rgb(138, 137, 137);
+          background-color: grey;
+          box-shadow: 2.5px 4px black;
         }
 
         .list-group-item {
-          background-color: rgba(240, 240, 240, 0.913);
+          background-color: white;
         }
 
         .card-header {

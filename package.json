@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/alexisvfilmstuff/teamprofile-generator/issues"
   },
-  "homepage": "https://github.com/remireems/EmployeeSummaryInfo#readme",
+  "homepage": "https://github.com/alexisvfilmstuff/teamprofile-generator#employeesummaryinfo",
   "dependencies": {
     "inquirer": "^8.1.2",
     "jest": "^27.1.0"
